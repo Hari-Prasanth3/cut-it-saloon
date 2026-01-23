@@ -1,0 +1,118 @@
+{
+  "identity": {
+    "persona": "E1: The Anti-AI Designer",
+    "mission": "Create a top 1% luxury salon website that breaks category conventions.",
+    "principles": [
+      "Fusion over Imitation",
+      "Emotion First",
+      "Content is King",
+      "Zoom In",
+      "Negative Space",
+      "Contrast"
+    ]
+  },
+  "typography": {
+    "headings": {
+      "font_family": "Playfair Display, serif",
+      "usage": "All section titles, hero headings, and feature highlights.",
+      "classes": "font-serif tracking-tight"
+    },
+    "body": {
+      "font_family": "Manrope, sans-serif",
+      "usage": "Paragraphs, navigation, buttons, and service details.",
+      "classes": "font-sans tracking-wide"
+    },
+    "installation": "Import via Google Fonts in index.css: @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');"
+  },
+  "colors": {
+    "palette": {
+      "background": "#0a0a0a",
+      "foreground": "#ededed",
+      "primary": "#D4AF37",
+      "secondary": "#1a1a1a",
+      "accent": "#F5F5F5",
+      "muted": "#2a2a2a",
+      "border": "#333333"
+    },
+    "gradients": {
+      "gold_text": "bg-clip-text text-transparent bg-gradient-to-r from-[#D4AF37] via-[#F7E7CE] to-[#D4AF37]",
+      "gold_border": "border-image-source: linear-gradient(to right, #D4AF37, #F7E7CE, #D4AF37);",
+      "dark_overlay": "bg-gradient-to-b from-black/80 via-black/50 to-black"
+    },
+    "theme_strategy": "Dark Mode Only (Luxury/Jewel Archetype). No light mode toggle needed as per 'Classic dark charcoal/black + gold' requirement."
+  },
+  "visual_enhancers": {
+    "textures": "Use subtle grain overlay on the background to avoid 'digital flatness'.",
+    "shadows": "shadow-[0_0_30px_-10px_rgba(212,175,55,0.15)] (Gold Glow)",
+    "borders": "1px solid rgba(212, 175, 55, 0.2) (Subtle Gold)",
+    "glassmorphism": "backdrop-blur-xl bg-black/40 border border-white/10"
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-[#D4AF37] text-black hover:bg-[#b5952f] rounded-none uppercase tracking-widest font-bold px-8 py-4 transition-all duration-300",
+      "outline": "border border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37] hover:text-black rounded-none uppercase tracking-widest px-8 py-4 transition-all duration-300"
+    },
+    "cards": {
+      "style": "bg-[#121212] border border-white/5 hover:border-[#D4AF37]/30 transition-colors duration-500 rounded-sm p-8",
+      "hover_effect": "Slight lift (-translate-y-1) and gold glow on hover."
+    },
+    "navigation": {
+      "style": "Fixed glassmorphic header. Logo on left, Links center, 'Book Now' Gold Button on right.",
+      "mobile": "Full-screen dark menu with large gold typography."
+    }
+  },
+  "layout_strategy": {
+    "hero_section": {
+      "type": "Immersive",
+      "content": "Full-screen background image with dark overlay. Centered typography: 'Experience Luxury' in small caps gold, followed by 'Cut It Salon & Spa' in massive Playfair Display.",
+      "cta": "Two buttons: 'Book Appointment' (Primary) and 'Call Now' (Outline)."
+    },
+    "about_section": {
+      "layout": "Asymmetric Grid (Mode A)",
+      "visuals": "Large image on left, text block on right with 'Animated Counters' (Years, Rating, Clients) below text.",
+      "counters": "Use gold numbers with small white labels."
+    },
+    "services_section": {
+      "layout": "Bento Grid or Accordion",
+      "style": "Categorized lists (Hair, Spa, Facials). Each item has a price in gold. Use dotted leaders or space-between layout.",
+      "highlight": "Gold border-bottom for active categories."
+    },
+    "gallery_section": {
+      "layout": "Masonry or Horizontal Scroll",
+      "interaction": "Zoom on hover. Lightbox on click."
+    },
+    "reviews_section": {
+      "component": "Carousel",
+      "style": "Minimalist cards. Gold stars. Client name in bold."
+    },
+    "location_contact": {
+      "layout": "Split Screen",
+      "left": "Contact Info + WhatsApp Button + Social Links.",
+      "right": "Styled Google Map (Dark Mode Map Styles)."
+    }
+  },
+  "image_urls": {
+    "hero_bg": "https://images.unsplash.com/photo-1698864551605-fab9fed03af5?q=80&w=2070&auto=format&fit=crop",
+    "about_img": "https://images.unsplash.com/photo-1707250059131-b6f9d7fd6612?q=80&w=2070&auto=format&fit=crop",
+    "service_hair": "https://images.unsplash.com/photo-1520338661084-680395057c93?q=80&w=2070&auto=format&fit=crop",
+    "service_spa": "https://images.unsplash.com/photo-1542848285-4777eb2a621e?q=80&w=2070&auto=format&fit=crop",
+    "service_tools": "https://images.pexels.com/photos/7697711/pexels-photo-7697711.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "gallery": [
+      "https://images.unsplash.com/photo-1701885183616-cf00e2db1a3b?q=80&w=2070&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1722350766824-f8520e9676ac?q=80&w=2070&auto=format&fit=crop",
+      "https://images.pexels.com/photos/3993307/pexels-photo-3993307.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "https://images.unsplash.com/photo-1666622833860-562f3a5caa59?q=80&w=2070&auto=format&fit=crop"
+    ]
+  },
+  "universal_guidelines": [
+    "Do not use 'Inter' for headings. Use 'Playfair Display'.",
+    "Do not use gradients for backgrounds, only for text or borders.",
+    "Use 2-3x more spacing than typical designs (p-12, p-24).",
+    "Ensure all interactive elements have hover states (text color change, border glow).",
+    "Use 'sonner' for toasts.",
+    "All interactive elements must have data-testid attributes.",
+    "Mobile-first responsive design is mandatory.",
+    "Use 'lucide-react' for icons."
+  ],
+  "instructions_to_main_agent": "You are building a single-page React app. Use the provided image URLs. Implement smooth scrolling. Use 'framer-motion' for entrance animations (fade-in up). Ensure the 'Book Appointment' button links to 'https://dikidi.app'. Add a floating WhatsApp button."
+}

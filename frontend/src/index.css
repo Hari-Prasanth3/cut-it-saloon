@@ -25,20 +25,20 @@ code {
         --card-foreground: 0 0% 93%;
         --popover: 0 0% 7%;
         --popover-foreground: 0 0% 93%;
-        --primary: 43 74% 49%;
-        --primary-foreground: 0 0% 0%;
+        --primary: 217 91% 60%;
+        --primary-foreground: 0 0% 100%;
         --secondary: 0 0% 10%;
         --secondary-foreground: 0 0% 93%;
-        --muted: 0 0% 16%;
+        --muted: 0 0% 15%;
         --muted-foreground: 0 0% 64%;
-        --accent: 0 0% 96%;
-        --accent-foreground: 0 0% 7%;
+        --accent: 43 74% 49%;
+        --accent-foreground: 0 0% 0%;
         --destructive: 0 84% 60%;
         --destructive-foreground: 0 0% 98%;
         --border: 0 0% 20%;
         --input: 0 0% 20%;
-        --ring: 43 74% 49%;
-        --radius: 0rem;
+        --ring: 217 91% 60%;
+        --radius: 0.75rem;
     }
 }
 
@@ -88,6 +88,22 @@ html {
 
 .gold-glow {
     box-shadow: 0 0 40px rgba(212, 175, 55, 0.2);
+}
+
+.blue-glow {
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
+}
+
+.blue-glow-hover:hover {
+    box-shadow: 0 0 30px rgba(59, 130, 246, 0.5);
+}
+
+.image-zoom-hover {
+    transition: transform 0.5s ease;
+}
+
+.image-zoom-hover:hover {
+    transform: scale(1.05);
 }
 
 @layer base {

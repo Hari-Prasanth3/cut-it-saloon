@@ -46,6 +46,7 @@ code {
     * {
         @apply border-border;
     }
+
     body {
         @apply bg-[#0a0a0a] text-[#ededed];
     }
@@ -111,7 +112,7 @@ html {
         display: contents !important;
     }
 
-    [data-debug-wrapper="true"] > * {
+    [data-debug-wrapper="true"]>* {
         margin-left: inherit;
         margin-right: inherit;
         margin-top: inherit;

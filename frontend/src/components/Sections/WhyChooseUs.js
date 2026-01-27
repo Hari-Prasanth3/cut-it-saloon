@@ -2,52 +2,53 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { Star, Scissors, Sparkles, ShieldCheck, Heart, Zap, Coffee, Award } from "lucide-react";
+import { Star, Scissors, Sparkles, ShieldCheck, Heart, Zap, Coffee, Award, UserCheck, Clock } from "lucide-react";
 import ScrollReveal from "../Common/ScrollReveal";
 
 const WhyChooseUs = () => {
     const features = [
         {
-            icon: <Star size={36} />,
-            title: "4.8★ Rating",
-            description: "Trusted by 84+ satisfied customers for excellence.",
+          icon: <Star size={36} />,
+          title: "4.8★ Rating",
+          description: "Trusted by 84+ satisfied customers for excellence.",
         },
         {
-            icon: <Scissors size={36} />,
-            title: "Master Stylists",
-            description: "Expert hands with international training and precision.",
+          icon: <Scissors size={36} />,
+          title: "Master Stylists",
+          description: "Expert hands with international training and precision.",
         },
         {
-            icon: <Sparkles size={36} />,
-            title: "Luxury Products",
-            description: "We use only premium brands like L'Oreal & Schwarzkopf.",
+          icon: <Sparkles size={36} />,
+          title: "Luxury Products",
+          description: "We use only premium brands like L'Oreal & Schwarzkopf.",
         },
         {
-            icon: <ShieldCheck size={36} />,
-            title: "Hygiene First",
-            description: "Hospital-grade sterilization for all tools and space.",
+          icon: <ShieldCheck size={36} />,
+          title: "Hygiene First",
+          description: "Hospital-grade sterilization for all tools and space.",
         },
         {
-            icon: <Heart size={36} />,
-            title: "Inclusive Space",
-            description: "Warm, respectful, and LGBTQ+ friendly environment.",
+          icon: <Zap size={36} />,
+          title: "Premium Ambience",
+          description: "Modern, comfortable, and luxurious salon interiors.",
         },
         {
-            icon: <Zap size={36} />,
-            title: "Premium Ambience",
-            description: "Modern, comfortable, and luxurious salon interiors.",
+          icon: <Award size={36} />,
+          title: "Global Trends",
+          description: "Stay ahead with the latest international style trends.",
         },
         {
-            icon: <Coffee size={36} />,
-            title: "Refreshment Bar",
-            description: "Complimentary gourmet coffee and tea for all clients.",
+          icon: <UserCheck size={36} />,
+          title: "Expert Consultation",
+          description: "Clear guidance before every service to match your face shape.",
         },
         {
-            icon: <Award size={36} />,
-            title: "Global Trends",
-            description: "Stay ahead with the latest international style trends.",
+          icon: <Clock size={36} />,
+          title: "On-Time Service",
+          description: "Appointments run on schedule with minimal waiting time.",
         },
-    ];
+      ];
+      
 
     return (
         <section className="md:py-20 py-8 px-6 bg-[#0a0a0a] overflow-hidden" data-testid="why-choose-us-section">

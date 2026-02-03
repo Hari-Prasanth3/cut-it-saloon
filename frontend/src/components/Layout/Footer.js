@@ -36,13 +36,24 @@ const Footer = () => {
                         <h4 className="text-[#ededed] uppercase tracking-wider text-sm font-bold mb-6">
                             Contact
                         </h4>
-                        <p className="text-[#a1a1aa] text-base mb-3 leading-relaxed">114 thanner panthal, vilankurichi road</p>
-                        <p className="text-[#a1a1aa] text-base mb-3">Coimbatore – 641004</p>
+                        <p className="text-[#a1a1aa] text-base mb-2 leading-relaxed">114 thanner panthal, vilankurichi road</p>
+                        <p className="text-[#a1a1aa] text-base mb-2">Coimbatore – 641004</p>
                         <a
                             href="tel:08072016978"
                             className="text-[#a1a1aa] hover:text-[#ededed] transition-colors text-base"
                         >
                             080720 16978
+                        </a>
+
+                        <p className="text-[#a1a1aa] text-base mb-2 mt-2 leading-relaxed"> 25A, Puliyankulam to Sowripalayam road,<br />
+                            Opposite Meena Estate Busstand, Meena estate,<br />
+                            Coimbatore, Tamil Nadu – 641022</p>
+
+                        <a
+                            href="tel:93618 56556"
+                            className="text-[#a1a1aa] hover:text-[#ededed] transition-colors text-base"
+                        >
+                            93618 56556
                         </a>
                     </div>
                 </div>

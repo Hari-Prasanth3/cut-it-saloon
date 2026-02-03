@@ -25,20 +25,34 @@ const Navigation = () => {
         { name: "Contact", href: "#contact" },
     ];
 
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        const checkMobile = () => {
+            setIsMobile(window.innerWidth < 768); // md breakpoint
+        };
+
+        checkMobile();
+        window.addEventListener("resize", checkMobile);
+        return () => window.removeEventListener("resize", checkMobile);
+    }, []);
+
     return (
         <nav
-            className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${scrolled
-                ? "backdrop-blur-xl bg-black/60 border-b border-white/10"
-                : "bg-transparent"
-                }`}
+            className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300
+    ${(scrolled || (isMobile && isOpen))
+                    ? "backdrop-blur-xl bg-black/60 border-b border-white/10"
+                    : "bg-transparent"
+                }
+  `}
             data-testid="main-navigation"
+
         >
-            <div className="max-w-7xl mx-auto px-6 py-4">
+            <div className="max-w-7xl mx-auto px-6 md:pt-2 py-2">
                 <div className="flex items-center justify-between">
                     <a href="#home" className="flex items-center space-x-3" data-testid="logo-link">
-                        <img src="/images/logo-removebg-preview.png" alt="Logo" className="w-32 md:w-64 h-8 md:h-16 max-w-full" />
+                        <img src="/images/logo-removebg-preview.png" alt="Logo" className="w-32 md:w-48 h-12 md:h-16 max-w-full" />
                     </a>
-
                     {/* Desktop Navigation */}
                     <div className="hidden md:flex items-center space-x-8">
                         {navLinks.map((link) => (
@@ -80,7 +94,7 @@ const Navigation = () => {
                             initial={{ opacity: 0, height: 0 }}
                             animate={{ opacity: 1, height: "auto" }}
                             exit={{ opacity: 0, height: 0 }}
-                            className="md:hidden mt-4 pb-4"
+                            className="md:hidden mt-4 pb-4 px-2 "
                             data-testid="mobile-menu"
                         >
                             {navLinks.map((link) => (

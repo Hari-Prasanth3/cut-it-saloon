@@ -7,7 +7,7 @@ import AnimatedCounter from "../Common/AnimatedCounter";
 
 const About = () => {
     return (
-        <section id="about" className="md:py-20 py-8 px-6 bg-[#0a0a0a] overflow-x-hidden" data-testid="about-section">
+        <section id="about" className="md:py-20 py-8 px-6 bg-[#0a0a0a] overflow-hidden" data-testid="about-section">
             <div className="max-w-7xl mx-auto">
                 <div className="grid md:grid-cols-2 gap-16 items-center">
                     <ScrollReveal>

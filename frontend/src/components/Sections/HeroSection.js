@@ -24,29 +24,34 @@ const HeroSection = () => {
             </div>
 
             {/* Shutter Panels */}
+            {/* Left Shutter */}
             <motion.div
-                initial={{ width: "50%" }}
-                animate={{ width: "0%" }}
+                initial={{ scaleX: 1 }}
+                animate={{ scaleX: 0 }}
                 transition={{
                     duration: 1.4,
                     ease: [0.6, 0.01, -0.05, 0.9],
-                    delay: 0.2
+                    delay: 0.2,
                 }}
-                onAnimationComplete={() => setShutterComplete(true)}
-                className="fixed top-0 left-0 h-full bg-black z-50"
-                style={{ transformOrigin: "left", maxWidth: "100vw", width: "50%" }}
+                className="fixed inset-0 bg-black z-50"
+                style={{ transformOrigin: "left" }}
             />
+
+
+            {/* Right Shutter */}
             <motion.div
-                initial={{ width: "50%" }}
-                animate={{ width: "0%" }}
+                initial={{ scaleX: 1 }}
+                animate={{ scaleX: 0 }}
                 transition={{
                     duration: 1.4,
                     ease: [0.6, 0.01, -0.05, 0.9],
-                    delay: 0.2
+                    delay: 0.2,
                 }}
-                className="fixed top-0 right-0 h-full bg-black z-50"
-                style={{ transformOrigin: "right", maxWidth: "100vw", width: "50%" }}
+                className="fixed inset-0 bg-black z-50"
+                style={{ transformOrigin: "right" }}
             />
+
+
 
             {/* Hero Content */}
             <motion.div

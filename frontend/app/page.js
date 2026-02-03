@@ -21,11 +21,11 @@ import CTASection from "@/components/Sections/CTASection";
 
 export default function Home() {
   return (
-    <div 
-      className="relative overflow-x-hidden w-full max-w-full" 
-      style={{ 
-        width: '100%', 
-        maxWidth: '100vw', 
+    <div
+      className="relative overflow-x-hidden w-full max-w-full"
+      style={{
+        width: '100%',
+        maxWidth: '100vw',
         overflowX: 'hidden',
         position: 'relative'
       }}

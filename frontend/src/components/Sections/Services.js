@@ -49,7 +49,7 @@ const Services = () => {
     const [activeCategory, setActiveCategory] = useState("Hair Services");
 
     return (
-        <section id="services" className="md:py-20 py-8 px-6 bg-[#121212]" data-testid="services-section">
+        <section id="services" className="md:py-20 py-8 px-6 bg-[#121212] overflow-hidden" data-testid="services-section">
             <div className="max-w-7xl mx-auto">
                 <ScrollReveal>
                     <div className="text-center mb-20">
@@ -72,7 +72,7 @@ const Services = () => {
                                         onClick={() => setActiveCategory(category)}
                                         whileHover={{ x: 10 }}
                                         className={`w-full text-left px-8 py-5 border-l-4 transition-all duration-300 rounded-r-lg ${activeCategory === category
-                                            ? "border-[#3B82F6] bg-white/5 text-[#ededed] backdrop-blur-sm"
+                                            ? "border-[#D4AF37] bg-white/5 text-[#ededed] backdrop-blur-sm"
                                             : "border-white/10 text-[#ededed]/60 hover:border-[#D4AF37]/50 hover:text-[#ededed] hover:bg-white/5"
                                             }`}
                                         data-testid={`service-category-${category.toLowerCase().replace(/ /g, '-')}`}
@@ -97,7 +97,7 @@ const Services = () => {
                                             initial={{ opacity: 0, x: -20 }}
                                             animate={{ opacity: 1, x: 0 }}
                                             transition={{ delay: index * 0.05 }}
-                                            className="flex justify-between items-center py-4 border-b border-white/10 hover:border-[#3B82F6]/30 transition-colors group"
+                                            className="flex justify-between items-center py-4 border-b border-white/10 hover:border-[#D4AF37]/30 transition-colors group"
                                             data-testid={`service-item-${index}`}
                                         >
                                             <span className="text-[#ededed] text-base group-hover:text-[#ededed] transition-colors">

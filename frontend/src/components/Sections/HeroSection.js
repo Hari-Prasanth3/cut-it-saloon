@@ -82,7 +82,7 @@ const HeroSection = () => {
                 >
                     <a
                         href="tel:08072016978"
-                        className="border-2 border-[#D4AF37]/50 text-[#D4AF37] hover:bg-[#D4AF37]/10 hover:border-[#D4AF37] px-10 py-5 rounded-full uppercase tracking-widest font-bold text-base transition-all duration-300 w-full sm:w-auto text-center flex items-center justify-center gap-3"
+                        className="border-2 bg-[#D4AF37]/20 border-[#D4AF37] hover:bg-[#D4AF37]/30 hover:border-[#e3b522] px-10 py-5 rounded-full uppercase tracking-widest font-bold text-base transition-all duration-300 w-full sm:w-auto text-center flex items-center justify-center gap-3"
                         data-testid="hero-call-button"
                     >
                         <Phone size={20} />

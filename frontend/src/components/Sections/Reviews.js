@@ -78,7 +78,7 @@ const Reviews = () => {
                                 whileHover={{ scale: 1.1 }}
                                 whileTap={{ scale: 0.95 }}
                                 onClick={prevReview}
-                                className="bg-white/5 border border-white/10 hover:border-[#3B82F6] text-[#ededed] p-4 rounded-full transition-all"
+                                className="bg-white/5 border border-white/10 hover:border-[#D4AF37] text-[#ededed] p-4 rounded-full transition-all"
                                 data-testid="review-prev-button"
                             >
                                 <ChevronLeft size={28} />
@@ -87,7 +87,7 @@ const Reviews = () => {
                                 whileHover={{ scale: 1.1 }}
                                 whileTap={{ scale: 0.95 }}
                                 onClick={nextReview}
-                                className="bg-white/5 border border-white/10 hover:border-[#3B82F6] text-[#ededed] p-4 rounded-full transition-all"
+                                className="bg-white/5 border border-white/10 hover:border-[#D4AF37] text-[#ededed] p-4 rounded-full transition-all"
                                 data-testid="review-next-button"
                             >
                                 <ChevronRight size={28} />

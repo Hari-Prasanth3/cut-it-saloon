@@ -2,12 +2,12 @@ import React from "react";
 
 const Footer = () => {
     return (
-        <footer className="bg-[#121212] border-t border-white/10 py-8 px-6" data-testid="footer">
-            <div className="max-w-7xl mx-auto">
+        <footer className="bg-[#121212] border-t border-white/10 px-6" data-testid="footer">
+            <div className="md:max-w-7xl md:mx-auto md:py-8">
                 <div className="grid md:grid-cols-3 gap-12 mb-12">
                     <div>
                         <div className="flex items-center space-x-3 mb-6">
-                            <img src="/images/logo-removebg-preview.png" alt="Logo" className="w-48 md:w-96 h-12 md:h-24 max-w-full" />
+                            <img src="/images/logo-removebg-preview.png" alt="Logo" className="w-48 md:w-72 h-12 md:h-24 max-w-full" />
                         </div>
                         <p className="text-[#a1a1aa] text-base leading-relaxed">
                             Premium grooming and spa services in Coimbatore. Experience luxury, style, and sophistication.

@@ -7,7 +7,7 @@ on:
   push:
     branches:
       - main
-      - comming_soon
+      - coming_soon
   workflow_dispatch: # Allows manual triggering from GitHub Actions tab
 
 jobs:

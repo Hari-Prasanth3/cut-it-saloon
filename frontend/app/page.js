@@ -58,7 +58,7 @@ export default function Home() {
           className="text-lg md:text-2xl text-white/70 font-sans mb-14 tracking-wide font-light max-w-2xl mx-auto leading-relaxed"
         >
           We're creating a sanctuary where style meets relaxation. Soon,
-          Chennai's finest grooming experience will be open for you.
+          Coimbatore's finest grooming experience will be open for you.
         </motion.p>
 
         <motion.div

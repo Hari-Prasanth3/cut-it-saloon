@@ -7,16 +7,16 @@ export const metadata = {
   openGraph: {
     title: "Cut It Saloon | Premium Hair Salon",
     description: "Experience premium hair styling and grooming services at Cut It Saloon",
-    images: ["/images/cut-it-saloon-logo.jpeg"],
+    images: ["/images/cut-it-saloon-logo-removebg-preview.png"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Cut It Saloon | Premium Hair Salon",
     description: "Experience premium hair styling and grooming services at Cut It Saloon",
-    images: ["/images/cut-it-saloon-logo.jpeg"],
+    images: ["/images/cut-it-saloon-logo-removebg-preview.png"]
   },
   icons: {
-    icon: "/images/cut-it-saloon-logo.jpeg",
+    icon: ["/images/cut-it-saloon-logo-removebg-preview.png"]
   },
 };
 

@@ -1,4 +1,5 @@
 import React from "react";
+import { Instagram, Mail } from "lucide-react";
 
 const Footer = () => {
     return (
@@ -12,7 +13,28 @@ const Footer = () => {
                         <p className="text-[#a1a1aa] text-base leading-relaxed">
                             Premium grooming and spa services in Coimbatore. Experience luxury, style, and sophistication.
                         </p>
+                        <div className="flex items-center gap-4 mt-4">
+                            <a
+                                href="https://www.instagram.com/cutit2.osalon?utm_source=qr&igsh=ZmtoeWl4M2RybWRk"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex items-center gap-2 text-[#a1a1aa] hover:text-[#ededed] transition-colors text-base"
+                                aria-label="Follow us on Instagram"
+                            >
+                                <Instagram size={20} />
+                                <span>Instagram</span>
+                            </a>
+                            <a
+                                href="mailto:ramsubhash07@gmail.com"
+                                className="flex items-center gap-2 text-[#a1a1aa] hover:text-[#ededed] transition-colors text-base"
+                                aria-label="Email us"
+                            >
+                                <Mail size={20} />
+                                <span>ramsubhash07@gmail.com</span>
+                            </a>
+                        </div>
                     </div>
+                    
 
                     <div>
                         <h4 className="text-[#ededed] uppercase tracking-wider text-sm font-bold mb-6">
@@ -55,6 +77,8 @@ const Footer = () => {
                         >
                             93618 56556
                         </a>
+
+                        
                     </div>
                 </div>
 

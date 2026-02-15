@@ -1,24 +1,27 @@
 import "./globals.css";
 
 export const metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"),
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"
+  ),
+
   title: "Cut It Saloon | Premium Hair Salon",
-  description: "Experience premium hair styling and grooming services at Cut It Saloon",
-  openGraph: {
-    title: "Cut It Saloon | Premium Hair Salon",
-    description: "Experience premium hair styling and grooming services at Cut It Saloon",
-    images: ["/images/cut-it-saloon-logo-removebg-preview.png"],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Cut It Saloon | Premium Hair Salon",
-    description: "Experience premium hair styling and grooming services at Cut It Saloon",
-    images: ["/images/cut-it-saloon-logo-removebg-preview.png"]
-  },
-  icons: {
-    icon: ["/images/cut-it-saloon-logo-removebg-preview.png"]
-  },
+  description:
+    "Experience premium hair styling and grooming services at Cut It Saloon",
+
+    icons: {
+      icon: [
+        { url: "/images/cutit-favicon2.ico" },
+        { url: "/images/cutit-favicon2-gold-32.png", sizes: "32x32", type: "image/png" },
+        { url: "/images/cutit-favicon2-gold-16.png", sizes: "16x16", type: "image/png" },
+      ],
+      apple: [
+        { url: "/images/cutit-favicon2-gold-180.png", sizes: "180x180", type: "image/png" },
+      ],
+    },
+    
 };
+
 
 export default function RootLayout({ children }) {
   return (

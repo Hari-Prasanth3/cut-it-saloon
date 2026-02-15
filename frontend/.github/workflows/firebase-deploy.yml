@@ -1,14 +1,12 @@
 name: Deploy to Firebase Hosting
 
-# This workflow deploys the Next.js app to Firebase Hosting
-# TODO: Move FIREBASE_TOKEN to GitHub Secrets for security
 
 on:
   push:
     branches:
       - main
       - next
-  workflow_dispatch: # Allows manual triggering from GitHub Actions tab
+  workflow_dispatch:
 
 jobs:
   build_and_deploy:
@@ -29,17 +27,14 @@ jobs:
 
       - name: Build Next.js app
         run: npm run build
-        # Next.js will output static files to the 'out' directory
 
       - name: Setup Firebase CLI
         run: npm install -g firebase-tools
 
       - name: Deploy to Firebase Hosting
         env:
-          # TODO: Replace with GitHub Secret: ${{ secrets.FIREBASE_TOKEN }}
-          FIREBASE_TOKEN: 1//0ghwiDD1TArcvCgYIARAAGBASNgF-L9IrWVgI1J0GMpeXSwMvEql7A_cSkZB103CGcFiRzJSJvehmOatlCq04TI9Ip8Q_t1mlUA
-          # TODO: Replace with GitHub Secret: ${{ secrets.FIREBASE_PROJECT }}
-          FIREBASE_PROJECT: sample-project-5bea9
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+          FIREBASE_PROJECT: ${{ secrets.FIREBASE_PROJECT }}
         run: |
           firebase deploy --only hosting \
             --project "$FIREBASE_PROJECT" \

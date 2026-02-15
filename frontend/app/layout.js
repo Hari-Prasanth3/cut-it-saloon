@@ -5,21 +5,21 @@ export const metadata = {
     process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"
   ),
 
-  title: "Cut It Saloon | Premium Hair Salon",
+  title: "Cut It Salon & Spa | Hair Salon in Coimbatore",
   description:
-    "Experience premium hair styling and grooming services at Cut It Saloon",
+    "Cut It Salon & Spa offers professional hair styling, spa, grooming and beauty services in Coimbatore. Book your appointment today.",
+
 
     icons: {
       icon: [
-        { url: "/images/cutit-favicon2.ico" },
-        { url: "/images/cutit-favicon2-gold-32.png", sizes: "32x32", type: "image/png" },
-        { url: "/images/cutit-favicon2-gold-16.png", sizes: "16x16", type: "image/png" },
+        { url: "/images/favicon.ico", sizes: "32x32", type: "image/png" },
+        { url: "/images/favicon.ico", sizes: "16x16", type: "image/png" },
       ],
       apple: [
-        { url: "/images/cutit-favicon2-gold-180.png", sizes: "180x180", type: "image/png" },
+        { url: "/images/favicon.png", sizes: "180x180", type: "image/png" },
       ],
     },
-    
+
 };
 
 

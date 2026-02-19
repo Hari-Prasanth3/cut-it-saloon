@@ -9,18 +9,12 @@ export const metadata = {
   description:
     "Cut It Salon & Spa offers professional hair styling, spa, grooming and beauty services in Coimbatore. Book your appointment today.",
 
-
-    icons: {
-      icon: [
-        { url: "/images/favicon.ico", sizes: "32x32", type: "image/png" },
-        { url: "/images/favicon.ico", sizes: "16x16", type: "image/png" },
-      ],
-      apple: [
-        { url: "/images/favicon.png", sizes: "180x180", type: "image/png" },
-      ],
-    },
-
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/images/favicon.png",
+  },
 };
+
 
 
 export default function RootLayout({ children }) {
